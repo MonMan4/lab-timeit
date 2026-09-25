@@ -140,9 +140,9 @@ Complete the following table with actual measured runtimes by substituting the v
 
 |                        | `xs=("1"*65536)` | `xs=([1]*65536)` | `xs=deque([1]*65536)` |
 | ---------------------- | ---------------- | ---------------- | --------------------- |
-| `check_palindrome_1`   |                  |                  |                       |
-| `check_palindrome_2`   |                  |                  |                       |
-| `check_palindrome_3`   |       --         |                  |                       |
+| `check_palindrome_1`   |  4.08 msec       |   3.42 msec      | 54.8 msec             |
+| `check_palindrome_2`   | 1.83 msec        |   1.80 msec      | 1.84 msec             |
+| `check_palindrome_3`   |       --         |   129 msec       | 2.71 msec             |
 
 You should observe that the slow runtimes here correspond with the $O(n^2)$ asymptotic runtimes,
 and the fast runtimes correspond with the $O(n)$ runtimes.
